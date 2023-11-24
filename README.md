@@ -3,6 +3,16 @@ Projetos para a Global solution 1º semestre
 
 Descrição do problema:
 
+  A ausência de um sistema de contagem de pessoas em hospitais, pode causar diversos problemas como:
+  
+Gestão de Fluxo de Pacientes:
+  Sem um sistema de contagem de pessoas, os hospitais podem ter dificuldade em gerenciar eficientemente o fluxo de pacientes, levando a congestionamentos e atrasos nos atendimentos.
+Controle de Infecções:
+  Em situações de pandemia ou surto de doenças contagiosas, é essencial monitorar o número de pessoas presentes em um local, pois assim diminui os riscos de contaminação.
+Planejamento de Recursos:
+  Um sistema de contagem de pessoas ajuda na gestão eficaz dos recursos hospitalares, permitindo a alocação adequada de pessoal, leitos e equipamentos conforme a demanda.
+
+Um sistema de contagem de pessoas nos hospitais pode oferecer diversos benefícios em termos de eficiência operacional, segurança e qualidade do atendimento ao paciente.
 
 
 Solução: 
@@ -20,56 +30,57 @@ https://www.tinkercad.com/things/453vZOZvMxK-contador-de-pessoas-gs-1-semestre?s
 
 Código fonte: 
 
-#include<LiquidCrystal.h>                                
-LiquidCrystal lcd(3, 2, 4, 5, 6, 7);                   
-int const sinal = 8;                                     
-int const led_red = 9;                                     
-int const reset = 11;                                     
-int cont = 0, x = 0, y = 0, i = 0, m1 = 0, m2 = 0;       
-long duracao;                                            
-void setup()
-{
-  pinMode(led_red, OUTPUT);                                
-  lcd.begin(16, 2);                                      
-  Serial.begin(9600);                                   
-  intro();                                               
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(3, 2, 4, 5, 6, 7);
+const int sinal = 8;
+const int led_red = 9;
+const int reset = 11;
+int cont = 0;
+int x = 0;
+int y = 0;
+
+void setup() {
+  pinMode(led_red, OUTPUT);
+  lcd.begin(16, 2);
+  Serial.begin(9600);
+  intro();
 }
 
-void loop()
-{
-  pinMode(sinal, OUTPUT);                                
-  digitalWrite(sinal, LOW);                              
-  delayMicroseconds(2);                                 
-  digitalWrite(sinal, HIGH);                             
-  delayMicroseconds(5);                                  
-  pinMode(sinal, INPUT);                                 
-  duracao = pulseIn(sinal, HIGH);
+void loop() {
+  pinMode(sinal, OUTPUT);
+  digitalWrite(sinal, LOW);
+  delayMicroseconds(2);
+  digitalWrite(sinal, HIGH);
+  delayMicroseconds(5);
+  pinMode(sinal, INPUT);
+  long duracao = pulseIn(sinal, HIGH);
 
+  float dist_metros = duracao * 0.0001715;
 
-  float dist_metros = duracao * .0001715;                
+  Serial.println(dist_metros);
 
-  Serial.println(dist_metros);                                                                   
-  if (dist_metros >= 0.30 && dist_metros <= 3.0)         
-    x = 1;                                               
-
-  else {                                                 
-    x = 0;                                               
-    y = 1;                                               
-    digitalWrite(led_red, LOW);                            
-  }
-  if (x == 1 && y == 1) {                                
-    cont++;                                              
-    y = 0;                                               
-    digitalWrite(led_red, HIGH);                           
+  if (dist_metros >= 0.30 && dist_metros <= 3.0) {
+    x = 1;
+  } else {
+    x = 0;
+    y = 1;
+    digitalWrite(led_red, LOW);
   }
 
-  Serial.println(cont);                                  
+  if (x == 1 && y == 1) {
+    cont++;
+    y = 0;
+    digitalWrite(led_red, HIGH);
+  }
 
-  contador();                                            
-                                           
-  if (digitalRead(reset) == HIGH)                        
-    cont = 0;                                            
+  Serial.println(cont);
 
+  contador();
+
+  if (digitalRead(reset) == HIGH) {
+    cont = 0;
+  }
 }
 
 void intro() {
