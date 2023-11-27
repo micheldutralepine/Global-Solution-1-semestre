@@ -3,7 +3,9 @@ Projetos para a Global solution 1º semestre
 
 Python
 
-
+Integrantes:
+Michel Dutra Lepine - RM553558
+Gabriel Souza Fiore - RM553710
 
                                                                             Carterinha de vacinação Digital
 
