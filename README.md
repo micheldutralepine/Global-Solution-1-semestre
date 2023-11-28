@@ -36,12 +36,14 @@ LiquidCrystal lcd(3, 2, 4, 5, 6, 7);
 const int sinal = 8;
 const int led_red = 9;
 const int reset = 11;
+const int buzzerPin = 10; // Substitua 10 pelo pino que você está usando para o buzzer
 int cont = 0;
 int x = 0;
 int y = 0;
 
 void setup() {
   pinMode(led_red, OUTPUT);
+  pinMode(buzzerPin, OUTPUT); // Configurar o pino do buzzer como saída
   lcd.begin(16, 2);
   Serial.begin(9600);
   intro();
@@ -95,5 +97,12 @@ void contador() {
   lcd.print("Pessoas= ");
   lcd.setCursor(9, 0);
   lcd.print(cont);
-}
 
+  if (cont >= 15) {
+    // Ativar o buzzer
+    tone(buzzerPin, 1000); // 1000 Hz
+  } else {
+    // Desativar o buzzer
+    noTone(buzzerPin);
+  }
+}
