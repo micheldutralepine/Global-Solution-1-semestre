@@ -1,0 +1,227 @@
+/* --------------------- Estlilos Gerais ------------  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---------------------- Header-Top ----------------- */
+
+.header-top {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.header-top-container {
+  display: flex;
+  margin: auto;
+  width: 1100px;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.loc {
+  display: flex;
+  gap: 10px;
+}
+
+.tel {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 409px) {
+  .header-top {
+    display: none;
+  }
+}
+
+/* ---------------------- HEADER ----------------------  */
+
+.header-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.contact {
+  background-color: #57c8b1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-list li a:hover {
+  background-color: #57c8b1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1012px) {
+  .logo {
+    margin: auto;
+  }
+
+  nav {
+    margin: auto;
+  }
+}
+
+@media (max-width: 299px) {
+  .header-container a img {
+    width: 199px;
+  }
+}
+
+/* --------------------- BANNER -------------------  */
+
+.banner {
+  background-image: url(../imgs/banner-saude.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video iframe {
+  border-radius: 7px;
+}
+
+.banner-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.banner-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 925px) {
+  iframe {
+    width: 500px;
+    height: 281px;
+  }
+}
+
+@media (max-width: 530px) {
+  iframe {
+    width: 350px;
+    height: 199px;
+  }
+}
+
+@media (max-width: 365px) {
+  iframe {
+    width: 250px;
+    height: 145px;
+  }
+}
+
+@media (max-width: 290px) {
+  .menu-list {
+    font-size: 14px;
+  }
+
+  .banner-title {
+    font-size: 25px;
+  }
+}
+
+/* -------------------- FOOTER --------------------- */
+
+footer {
+  background-color: #57c8b160;
+  font-size: 20px;
+  color: #444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0px;
+}
+
+.footer-information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  padding: 40px 0px;
+}
+
+@media (max-width: 515px) {
+  .loc {
+    flex-direction: column;
+  }
+
+  .tel {
+    flex-direction: column;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+}
