@@ -3,25 +3,26 @@ Projetos para a Global solution 1º semestre
 
 Descrição do problema:
 
-  A ausência de um sistema de contagem de pessoas em hospitais, pode causar diversos problemas como:
+  A ausência de um sistema de contagem de pessoas em hospitais (entradas, salas de espera, pronto-soccoro), pode causar diversos problemas como:
   
-Gestão de Fluxo de Pacientes:
-  Sem um sistema de contagem de pessoas, os hospitais podem ter dificuldade em gerenciar eficientemente o fluxo de pacientes, levando a congestionamentos e atrasos nos atendimentos.
+Falta de gestão de Fluxo de Pacientes:
+  Sem um sistema de contagem de pessoas, os hospitais podem ter dificuldade em gerenciar eficientemente o fluxo de pacientes, levando a congestionamentos e possíveis atrasos nos atendimentos.
+  
 Controle de Infecções:
-  Em situações de pandemia ou surto de doenças contagiosas, é essencial monitorar o número de pessoas presentes em um local, pois assim diminui os riscos de contaminação.
-Planejamento de Recursos:
+  Em situações de surto de doenças contagiosas ou até mesmo pandemias, como a Covid-19, é essencial monitorar o número de pessoas presentes em um local, pois assim é possível tomar medidas, como a utilização de máscaras, para diminuir os riscos de contaminação dos pacientes e seus acompanhantes. 
+  
+Eficiência no Planejamento de Recursos:
   Um sistema de contagem de pessoas ajuda na gestão eficaz dos recursos hospitalares, permitindo a alocação adequada de pessoal, leitos e equipamentos conforme a demanda.
-
-Um sistema de contagem de pessoas nos hospitais pode oferecer diversos benefícios em termos de eficiência operacional, segurança e qualidade do atendimento ao paciente.
 
 
 Solução: 
 
-  Prosta é um sistema baseado em Arduino projetado para monitorar e controlar o fluxo de pessoas que entram em um hospital. Ele visa otimizar o gerenciamento de dados relacionados à entrada de pacientes, visitantes e funcionários, proporcionando uma solução eficiente e automatizada. Os dados gravados na memória interna do Arduino podem ser posteriormente recuperados e analisados. Por exemplo, no controle de pessoas que frequentam os hospitais para depois concluirmos os dias da semanas com menos pessoas e tempo de espera, pode usar um sistema de controle de dados para controlar o acesso a um determinado local. Entre outras diversas aplicações e controles poderiam ser feitos com este sistema. 
+  Nossa proposta é um sistema baseado em Arduino projetado para monitorar e controlar o fluxo de pessoas que entram em um hospital. Ele busca otimizar o gerenciamento de dados relacionados à entrada de pacientes, acompanhantes, visitantes e funcionários, proporcionando uma solução eficiente e automatizada. Além disso, pode ser programado para soar alertas quando um a capacidade determinada de um local passe do indicado. Garantindo assim, que todos que frequentem os ambientes tenham a consiência dos riscos e recomendações de proteção que devem ser seguidas para evitar contaminações. Os dados gravados na memória interna do Arduino também podem ser recuperados e analisados. Por exemplo, no controle de pessoas que frequentam os hospitais, para depois concluirmos os dias da semanas com menos pessoas e tempo de espera e realizar uma logística melhor de atendimentos. 
+  Um sistema de contagem de pessoas nos hospitais pode oferecer diversos benefícios em termos de eficiência operacional, segurança e qualidade do atendimento ao paciente.
 
-instruções:
+Instruções:
 
-Para utilizar o dispositivo, basta conectar o Arduino. O funcionamento é bastante intuitivo. Quando um objeto passa em frente ao sensor ultrassônico, este é detectado e a informação é exibida no display de LED. A cada detecção, o sistema soma e exibe o total no visor. Se desejar reiniciar a contagem, há um botão para isso. Um simples clique reinicia o sistema, zerando os números e iniciando a contagem novamente.
+Para utilizar o dispositivo, basta conectar o Arduino. O funcionamento é bastante intuitivo. Quando um objeto passa em frente ao sensor ultrassônico, este é detectado e a informação (quantidade de pessoas) é exibida no display de LED. A cada detecção, o sistema soma, exibe o total no visor e ascende o led. Ao atingir uma determinada quantidade crítica de pessoas em um ambiente (número pré definido de acordo com as necessidades), um buzzer é acionado para alertar todos que as taxas de contaminação são mais altas. Se desejar reiniciar a contagem, há um botão para isso, um simples clique reinicia o sistema, zerando os números e iniciando a contagem novamente.
 
 Link Projeto:
 
