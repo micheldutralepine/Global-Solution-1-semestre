@@ -142,6 +142,7 @@ body {
 .banner-text {
   font-size: 20px;
   line-height: 28px;
+  text-align: justify;
   color: #fff;
   padding-top: 25px;
   padding-bottom: 50px;
