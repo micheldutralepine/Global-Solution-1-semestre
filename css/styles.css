@@ -140,7 +140,7 @@ body {
 }
 
 .banner-text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   text-align: justify;
   color: #fff;
@@ -189,27 +189,31 @@ body {
   font-size: 24px;
   color: white;
   display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
   text-align: center;
 }
 .conteudo-python{
   border: 2px solid lightgray;
+  border-radius: 10px;
   font-size: 18px;
   color: white;
   display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
+  text-align: justify;
 }
 .container-calculo {
   display: block;
   text-align: center;
   align-items: center;
 }
- .grafico {
+.grafico {
   width: 500px;
   height: 350px;
+  border-radius: 10px;
+  margin-bottom: 40px;
   
  }
 
