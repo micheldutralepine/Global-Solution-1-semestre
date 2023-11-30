@@ -179,6 +179,40 @@ body {
   }
 }
 
+/* -------------------- PROBLEMA&SOLUÇÃO --------------------- */
+
+.container-python{
+  margin-bottom: 40px;
+}
+
+.titulo-python {
+  font-size: 24px;
+  color: white;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.conteudo-python{
+  border: 2px solid lightgray;
+  font-size: 18px;
+  color: white;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.container-calculo {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+ .grafico {
+  width: 500px;
+  height: 350px;
+  
+ }
+
 /* -------------------- FOOTER --------------------- */
 
 footer {
