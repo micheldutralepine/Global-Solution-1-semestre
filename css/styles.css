@@ -73,6 +73,7 @@ body {
 .menu-list li a {
   text-decoration: none;
   color: #444;
+  padding: 8px;
 }
 
 .contact {
@@ -88,7 +89,6 @@ body {
 
 .menu-list li a:hover {
   background-color: #57c8b1;
-  padding: 10px;
   border-radius: 5px;
 }
 
@@ -181,7 +181,7 @@ body {
 
 /* -------------------- PROBLEMA&SOLUÇÃO --------------------- */
 
-.container-python{
+.container-python {
   margin-bottom: 40px;
 }
 
@@ -191,7 +191,7 @@ body {
   display: block;
   text-align: center;
 }
-.conteudo-python{
+.conteudo-python {
   border: 2px solid lightgray;
   border-radius: 10px;
   font-size: 18px;
@@ -214,8 +214,87 @@ body {
   height: 350px;
   border-radius: 10px;
   margin-bottom: 40px;
-  
- }
+}
+
+/* --------------------- CONTATO ----------------------  */
+
+#contato {
+  /* background-color: #57c8b1; */
+}
+
+.bg-contato {
+  max-width: 500px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.contato-container {
+  max-width: 550px;
+  margin: 100px auto;
+  padding: 50px;
+}
+
+.contato-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  width: 180px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #57c8b1;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #7bd1c3;
+}
+
+/* ----------------------- TIME ------------------------ */
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.table-container h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+table {
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 /* -------------------- FOOTER --------------------- */
 
