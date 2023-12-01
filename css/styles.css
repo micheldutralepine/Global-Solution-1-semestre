@@ -218,16 +218,12 @@ body {
 
 /* --------------------- CONTATO ----------------------  */
 
-#contato {
-  /* background-color: #57c8b1; */
-}
-
 .bg-contato {
   max-width: 500px;
   background-color: #eeeeee;
   border-radius: 10px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-top: -100px;
 }
 
 .contato-container {
@@ -239,7 +235,7 @@ body {
 .contato-container h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #444;
+  color: black;
 }
 
 form {
@@ -247,11 +243,11 @@ form {
   flex-direction: column;
 }
 
-label {
+#contatoForm label {
   margin-bottom: 8px;
 }
 
-input {
+#contatoForm input {
   margin-bottom: 16px;
   padding: 8px 10px;
   border-radius: 4px;
@@ -259,20 +255,16 @@ input {
   outline: none;
 }
 
-button {
+#contatoForm button {
   padding: 10px;
   width: 180px;
   margin: auto;
   cursor: pointer;
-  background-color: #57c8b1;
-  color: #fff;
+  background-color: rgb(65, 199, 88);
+  color: white;
   font-size: 17px;
   border: none;
   border-radius: 5px;
-}
-
-button:hover {
-  background-color: #7bd1c3;
 }
 
 /* ----------------------- TIME ------------------------ */
@@ -283,17 +275,41 @@ button:hover {
   align-items: center;
   max-width: 1200px;
   margin: auto;
+  margin-top: -50px;
 }
 
 .table-container h2 {
   margin-bottom: 20px;
-  color: #444;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.523);
 }
 
-table {
-  width: 1000px;
+.tabela table {
+  width: 600px;
+  border: 2px solid lightgray;
   text-align: center;
+  border-radius: 20px;
   margin-bottom: 40px;
+}
+
+.tabela img {
+  border-radius: 30%;
+  padding: 10px;
+}
+
+.tabela th{
+  border: 2px solid lightgray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.tabela td{
+  border: 2px solid lightgray;
+  padding: 5px;
+  border-radius: 10px;
 }
 
  /* -------------------- DEMONSTRAÇÃO-SOLUÇÃO --------------------- */

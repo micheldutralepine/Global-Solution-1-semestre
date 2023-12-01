@@ -1,129 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Solution - Contato</title>
+    <link rel="stylesheet" href="./../css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Solution - Contato</title>
-  <link rel="stylesheet" href="./../css/styles.css" />
-</head>
-
-<body>
-  <header id="home">
-    <!-- HEADER-TOP  -->
-    <div class="header-top">
-      <div class="header-top-container">
-        <div class="loc">
-          <img width="20px" src="./../imgs/loc.svg" alt="" />
-          <p>Avenida Paulista, 867</p>
-        </div>
-        <div class="tel">
-          <img width="12px" src="./../imgs/tel.svg" alt="" />
-          <p>Tel: (11) 4090-1750</p>
+  <body>
+    <header id="home">
+      <!-- HEADER-TOP  -->
+      <div class="header-top">
+        <div class="header-top-container">
+          <div class="loc">
+            <img width="20px" src="./../imgs/loc.svg" alt="" />
+            <p>Avenida Paulista, 867</p>
+          </div>
+          <div class="tel">
+            <img width="12px" src="./../imgs/tel.svg" alt="" />
+            <p>Tel: (11) 4090-1750</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- HEADER  -->
-    <div class="header">
-      <div class="header-container">
-        <div class="logo">
-          <a href="./../index.html">
-            <img width="290px" src="./../imgs/7689032.jpg" alt="" />
-          </a>
+      <!-- HEADER  -->
+      <div class="header">
+        <div class="header-container">
+          <div class="logo">
+            <a href="./../index.html">
+              <img width="290px" src="./../imgs/7689032.jpg" alt="" />
+            </a>
+          </div>
+          <nav>
+            <div class="menu">
+              <ol class="menu-list">
+                <li><a href="./../index.html">HOME</a></li>
+                <li>
+                  <a href="./../paginas/problema-solucao.html"
+                    >PROBLEMA & SOLUÇÃO</a
+                  >
+                </li>
+                <li>
+                  <a href="./../paginas/demonstracao-solucao.html"
+                    >DEMONSTRAÇÃO DA SOLUÇÃO</a
+                  >
+                </li>
+              </ol>
+              <div class="contact">
+                <a href="./../paginas/contato.html">CONTATO</a>
+              </div>
+            </div>
+          </nav>
         </div>
-        <nav>
-          <div class="menu">
-            <ol class="menu-list">
-              <li><a href="./../index.html">HOME</a></li>
-              <li>
-                <a href="./../paginas/problema-solucao.html">PROBLEMA & SOLUÇÃO</a>
-              </li>
-              <li>
-                <a href="./../paginas/demonstracao-solucao.html">DEMONSTRAÇÃO DA SOLUÇÃO</a>
-              </li>
-            </ol>
-            <div class="contact">
-              <a href="./../paginas/contato.html">CONTATO</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- BANNER -->
+      <section class="banner">
+        <div class="banner-container">
+          <div class="banner-title">
+            <h2>PlusHospital</h2>
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <section id="contato">
+          <div class="bg-contato">
+            <div class="contato-container">
+              <h2>ENTRE EM CONTATO</h2>
+              <form id="contatoForm">
+                <label for="name">Nome:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Digite seu nome"
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu e-mail"
+                />
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" name="subject" />
+                <button type="button" onclick="submitForm()">Enviar</button>
+              </form>
+              <div id="message"></div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-  </header>
+        </section>
 
-  <!-- FORMULARIO  -->
+        <!-- TABELA -->
 
-  <section id="contato">
-    <div class="bg-contato">
-      <div class="contato-container">
-        <h2>ENTRE EM CONTATO</h2>
-        <form id="contactForm">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" placeholder="Digite seu nome">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
-          <label for="subject">Assunto:</label>
-          <input type="text" id="subject" name="subject">
-          <button type="button" onclick="submitForm()">Enviar</button>
-        </form>
-        <div id="message"></div>
-      </div>
-    </div>
-  </section>
+        <section id="time">
+          <div class="table-container">
+            <h2>ALUNOS</h2>
+            <div class="tabela">
+              <table>
+                <thead>
+                  <tr>
+                    <th>FOTO</th>
+                    <th>NOME</th>
+                    <th>RM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        width="100px"
+                        height="110px"
+                        src="../imgs/IMG_20221022_234028.jpg"
+                      />
+                    </td>
+                    <td><b>Michel Lepine</b></td>
+                    <td><b>RM553558</b></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        width="100px"
+                        height="100px"
+                        src="../imgs/ft-gabriel.jpg"
+                      />
+                    </td>
+                    <td><b>Gabriel Fiore</b></td>
+                    <td><b>RM553710</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
 
-  <!-- TEBELA -->
+    <!-- FOOTER  -->
 
-  <section id="time">
-    <div class="table-container">
-      <h2>NOSSA EQUIPE</h2>
-      <div class="table">
-        <table border="1px">
-          <thead>
-            <tr>
-              <th>Foto</th>
-              <th>Nome</th>
-              <th>RM</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><img width="100px" height="110px" src="../imgs/IMG_20221022_234028.jpg"></td>
-              <td>Michel Lepine</td>
-              <td>RM553558</td>
-            </tr>
-            <tr>
-              <td><img width="100px" height="100px" src="../imgs/ft-gabriel.jpg"></td>
-              <td>Gabriel Fiore</td>
-              <td>RM553710</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-  <!-- FOOTER  -->
-
-  <footer>
-    <div class="footer-container">
-      <div class="copyright">
-        <img width="15px" src="./../imgs/copyright-symbol-svgrepo-com.svg" alt="" />
-        <p>Criado por Michel Lepine & Gabriel Fiore</p>
-      </div>
-      <div class="footer-information">
-        <div class="loc">
-          <img width="20px" src="./../imgs/loc-branco.svg" alt="" />
-          <p>Avenida Paulista, 867</p>
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <img
+            width="15px"
+            src="./../imgs/copyright-symbol-svgrepo-com.svg"
+            alt=""
+          />
+          <p>Criado por Michel Lepine & Gabriel Fiore</p>
         </div>
-        <div class="tel">
-          <img width="12px" src="./../imgs/tel-branco.svg" alt="" />
-          <p>Tel: (11) 4090-1750</p>
+        <div class="footer-information">
+          <div class="loc">
+            <img width="20px" src="./../imgs/loc-branco.svg" alt="" />
+            <p>Avenida Paulista, 867</p>
+          </div>
+          <div class="tel">
+            <img width="12px" src="./../imgs/tel-branco.svg" alt="" />
+            <p>Tel: (11) 4090-1750</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../js/javascript.js"></script>
-</body>
-
+    <script src="../js/javascript.js"></script>
+  </body>
 </html>
