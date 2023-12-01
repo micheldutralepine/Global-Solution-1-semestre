@@ -6,7 +6,7 @@ function submitForm() {
   if (name !== "" && email !== "") {
     messageContainer.innerHTML = "Agradecemos o contato!";
     messageContainer.style.color = "green";
-    document.getElementById("contactForm").reset();
+    document.getElementById("contatoForm").reset();
   } else {
     messageContainer.innerHTML = "Por favor, preencha os campos Nome e Email.";
     messageContainer.style.color = "red";
@@ -14,5 +14,5 @@ function submitForm() {
   messageContainer.style.display = "block";
   setTimeout(function () {
     messageContainer.style.display = "none";
-  }, 4000);
+  }, 5000);
 }
