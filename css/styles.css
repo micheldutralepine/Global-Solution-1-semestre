@@ -296,6 +296,52 @@ table {
   margin-bottom: 40px;
 }
 
+ /* -------------------- DEMONSTRAÇÃO-SOLUÇÃO --------------------- */
+
+ .container-solucao-python {
+  margin-bottom: 40px;
+ }
+ .video-python {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+ } 
+
+ .container-edge {
+  margin-top: 60px;
+ }
+
+ .titulo-edge{
+  font-size: 24px;
+  color: white;
+  display: block;
+  text-align: center;
+ }
+ .video-edge {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+ }
+
+ .link-edge a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+ }
+
+
+
 /* -------------------- FOOTER --------------------- */
 
 footer {
