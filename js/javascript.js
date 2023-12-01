@@ -4,8 +4,7 @@ function submitForm() {
   var subject = document.getElementById("subject").value;
   var messageContainer = document.getElementById("message");
   if (name !== "" && email !== "") {
-    messageContainer.innerHTML =
-      "Agradecemos o contato! Por favor, preencha com seus dados!";
+    messageContainer.innerHTML = "Agradecemos o contato!";
     messageContainer.style.color = "green";
     document.getElementById("contactForm").reset();
   } else {
