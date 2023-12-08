@@ -1,6 +1,9 @@
 # Global-Solution-1-semestre
 Projetos para a Global solution 1º semestre
 
+Integrantes: Michel Dutra Lepine, Gabriel Souza Fiore 
+
+
 Descrição do problema:
 
   A ausência de um sistema de contagem de pessoas em hospitais (entradas, salas de espera, pronto-soccoro), pode causar diversos problemas como:
@@ -107,3 +110,7 @@ void contador() {
     noTone(buzzerPin);
   }
 }
+
+
+Link para o video:
+https://www.youtube.com/watch?v=ghlUzee656M
